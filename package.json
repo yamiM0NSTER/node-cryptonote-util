@@ -2,6 +2,7 @@
     "name": "cryptonote-util",
     "version": "0.0.1",
     "main": "cryptonote",
+    "gypfile": true,
     "author": {
         "name": "LucasJones",
         "email": "lucasjonesdev@hotmail.co.uk"
@@ -10,8 +11,12 @@
         "type": "git",
         "url": "https://github.com/LucasJones/node-cryptonote-util.git"
     },
-    "dependencies" : {
-        "bindings" : "*"
+    "scripts": {
+      "test": "node-gyp clean && node-gyp configure && node-gyp build"
+    },
+    "dependencies": {
+        "bindings": "*",
+        "nan": "^2.6.2"
     },
     "keywords": [
         "cryptonight",
