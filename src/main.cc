@@ -105,6 +105,9 @@ NAN_METHOD(convert_blob) {
         if (!construct_parent_block(b, parent_block))
             return THROW_ERROR_EXCEPTION("Failed to construct parent block");
 
+        // Set the blocks to the right major and minor versions.
+        parent.major_version = b.major_version;
+        parent.minor_version = b.minor_version;
         if (!get_block_hashing_blob(parent_block, output))
             return THROW_ERROR_EXCEPTION("Failed to create mining block");
     }
