@@ -107,10 +107,6 @@ NAN_METHOD(convert_blob) {
 
         if (!get_block_hashing_blob(parent_block, output))
             return THROW_ERROR_EXCEPTION("Failed to create mining block");
-          
-        // Set the right values for the mining block. This is not the best solution.
-        output[0] = (char) b.major_version;
-        output[1] = (char) b.minor_version;
     }
 
     v8::Local<v8::Value> returnValue = Nan::CopyBuffer((char*)output.data(), output.size()).ToLocalChecked();
