@@ -46,7 +46,7 @@
           "OS=='win'",
           {
             "include_dirs": [
-              "c:/local/boost_1_59_0",
+              "c:/boost/boost_1_59_0",
               "src/platform/msc"
             ],
             "link_settings": {
