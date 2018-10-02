@@ -69,7 +69,7 @@
                     "RuntimeTypeInfo": "false",
                     "ExceptionHandling": "0",
                     "AdditionalOptions": [
-                      "/MP /EHsc"
+                      "/MP /EHsc -D_WIN32_WINNT=0x0501"
                     ]
                   },
                   "VCLibrarianTool": {
