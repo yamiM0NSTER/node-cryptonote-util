@@ -7,16 +7,21 @@
         "name": "LucasJones",
         "email": "lucasjonesdev@hotmail.co.uk"
     },
+    "contributors": [
+        "Brandon Lehmann <brandonlehmann@gmail.com>"
+    ],
+    "license": "GPL-3.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/turtlecoin/node-cryptonote-util.git"
     },
     "scripts": {
-      "test": "node-gyp clean && node-gyp configure && node-gyp build"
+        "test": "node-gyp clean && node-gyp configure && node-gyp build"
     },
     "dependencies": {
         "bindings": "*",
-        "nan": "^2.6.2"
+        "nan": "^2.11.1",
+        "safe-buffer": "^5.1.2"
     },
     "keywords": [
         "cryptonight",
